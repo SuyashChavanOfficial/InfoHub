@@ -2,8 +2,34 @@ body {
     background-color: #121212;
 }
 
+a {
+    color: whitesmoke;
+    position: relative;
+    padding: 4px;
+}
+
+a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: red;
+    transition: width 0.2s ease-in-out, left 0.2s ease-in-out;
+}
+
+a:hover::before {
+    width: 100%;
+    left: 0;
+}
+
+a:hover {
+    color: white;
+}
+
 hr {
-    background-color: gray;
+    background-color: white;
     margin: 0;
 }
 /* NAVBAR  */
@@ -19,8 +45,6 @@ hr {
 .navbar-nav li {
     margin-right: 20px;
 }
-
-/* Add this CSS code to your existing stylesheet */
 
 #nav-item-engineering {
     font-family: 'Space Mono', monospace;
@@ -75,3 +99,9 @@ hr {
     color: rgb(251, 134, 153);
 }
 
+/* FOOTER  */
+
+.footer a {
+    text-decoration: none;
+    color: white;
+}
