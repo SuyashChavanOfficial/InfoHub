@@ -1,0 +1,49 @@
+body {
+    background-color: #121212;
+}
+
+hr {
+    background-color: gray;
+    margin: 0;
+}
+/* NAVBAR  */
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+.top-section {
+    font-size: 18px;
+}
+
+.navbar-nav li {
+    margin-right: 20px;
+}
+
+/* Add this CSS code to your existing stylesheet */
+
+#nav-item-engineering {
+    font-family: 'Space Mono', monospace;
+    color: rgb(193, 251, 104);
+    position: relative;
+}
+
+#nav-item-engineering::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: rgb(193, 251, 104);
+    transition: width 0.2s ease-in-out, left 0.2s ease-in-out;
+}
+
+#nav-item-engineering:hover::before {
+    width: 100%;
+    left: 0;
+}
+
+#nav-item-engineering:hover {
+    color: rgb(151, 252, 0);
+}
