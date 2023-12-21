@@ -28,14 +28,33 @@ a:hover {
     color: white;
 }
 
+.no-underline:hover::before {
+    width: 0; /* Set width to 0 on hover */
+}
+
+/* Additional styles for the first anchor tag */
+.no-underline:hover {
+    color: inherit; /* Use the default text color on hover */
+}
+
 hr {
     background-color: white;
     margin: 0;
 }
 /* NAVBAR  */
 
+.logo {
+    width: 40px;
+    border-radius: 15%;
+}
 .navbar-brand {
     font-size: 1.5rem;
+    font-family: Montserrat;
+    transition: transform 0.2s ease-in-out;
+}
+
+.navbar-brand:hover {
+    transform: scale(1.1);
 }
 
 .top-section {
@@ -104,4 +123,9 @@ hr {
 .footer a {
     text-decoration: none;
     color: white;
+}
+
+.social-links a {
+    margin: 0 5px;
+    font-size: 20px;
 }
