@@ -1,0 +1,11 @@
+/* TYPEWRITER EFFECT  */
+
+.typewriter-text {
+    overflow: hidden;
+    border-right: .1em solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    display: inline-block;
+    line-height: 1.5;
+}

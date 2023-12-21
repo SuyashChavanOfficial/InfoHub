@@ -1,5 +1,7 @@
 body {
     background-color: #121212;
+    color: white;
+    font-family: Merriweather, sans-serif;
 }
 
 a {
@@ -29,12 +31,11 @@ a:hover {
 }
 
 .no-underline:hover::before {
-    width: 0; /* Set width to 0 on hover */
+    width: 0;
 }
 
-/* Additional styles for the first anchor tag */
 .no-underline:hover {
-    color: inherit; /* Use the default text color on hover */
+    color: inherit;
 }
 
 hr {
@@ -116,6 +117,26 @@ hr {
 
 #nav-item-arts:hover {
     color: rgb(251, 134, 153);
+}
+
+/* HOME SECTION  */
+
+.home-section {
+    display: flex;
+    margin: 10px auto;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.info-container h1 {
+    font-size: 58px;
+    font-family: Playfair Display, cursive;
+}
+
+.info-container {
+    text-align: center;
+    line-height: 5;
+    font-size: 20px;
 }
 
 /* FOOTER  */
