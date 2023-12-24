@@ -4,6 +4,10 @@ body {
     font-family: Merriweather, sans-serif;
 }
 
+h2 {
+    font-family: Montserrat;
+}
+
 a {
     color: whitesmoke;
     position: relative;
