@@ -8,6 +8,14 @@ h2 {
     font-family: Montserrat;
 }
 
+section {
+    margin-bottom: 50px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
 a {
     color: whitesmoke;
     position: relative;
@@ -76,51 +84,11 @@ hr {
     position: relative;
 }
 
-#nav-item-engineering::before {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: 0;
-    left: 50%;
-    background-color: rgb(193, 251, 104);
-    transition: width 0.2s ease-in-out, left 0.2s ease-in-out;
-}
-
-#nav-item-engineering:hover::before {
-    width: 100%;
-    left: 0;
-}
-
-#nav-item-engineering:hover {
-    color: rgb(151, 252, 0);
-}
-
 #nav-item-arts {
     font-family: Cinzel, cursive;
     font-weight: 900;
     position: relative;
     color: pink;
-}
-
-#nav-item-arts::before {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: 0;
-    left: 50%;
-    background-color: pink;
-    transition: width 0.2s ease-in-out, left 0.2s ease-in-out;
-}
-
-#nav-item-arts:hover::before {
-    width: 100%;
-    left: 0;
-}
-
-#nav-item-arts:hover {
-    color: rgb(251, 134, 153);
 }
 
 /* HOME SECTION  */

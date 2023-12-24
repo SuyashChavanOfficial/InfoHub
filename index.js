@@ -23,3 +23,30 @@ for (let i = 0; i < elements.length; i++) {
     elements[i].innerHTML = ''; // Clear existing content
     typeWriterForElement(elements[i], textContent, 0);
 }
+
+// SCROLLING ANIMATION 
+
+document.addEventListener("DOMContentLoaded", function () {
+    const sections = document.querySelectorAll("section");
+
+    const options = {
+        threshold: 0.5,
+    };
+
+    const observer = new IntersectionObserver(function (entries, observer) {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = "1";
+                entry.target.style.transform = "translateY(0)";
+            } else {
+                entry.target.style.opacity = "0";
+                entry.target.style.transform = "translateY(-20px)";
+            }
+        });
+    }, options);
+
+    sections.forEach((section) => {
+        observer.observe(section);
+    });
+});
+

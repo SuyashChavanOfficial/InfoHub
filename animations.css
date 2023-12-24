@@ -9,3 +9,45 @@
     display: inline-block;
     line-height: 1.5;
 }
+
+/* NAVBAR ANIMATION  */
+
+#nav-item-engineering::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: rgb(193, 251, 104);
+    transition: width 0.2s ease-in-out, left 0.2s ease-in-out;
+}
+
+#nav-item-engineering:hover::before {
+    width: 100%;
+    left: 0;
+}
+
+#nav-item-engineering:hover {
+    color: rgb(151, 252, 0);
+}
+
+#nav-item-arts::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: pink;
+    transition: width 0.2s ease-in-out, left 0.2s ease-in-out;
+}
+
+#nav-item-arts:hover::before {
+    width: 100%;
+    left: 0;
+}
+
+#nav-item-arts:hover {
+    color: rgb(251, 134, 153);
+}
