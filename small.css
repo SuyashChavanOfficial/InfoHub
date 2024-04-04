@@ -1,4 +1,11 @@
 @media only screen and (max-width: 767px) {
     
-    
+    .img-container {
+        display: none;
+    }
+
+    .typewriter-text {
+        font-size: 3vw;
+        
+    }
 }

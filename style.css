@@ -1,3 +1,4 @@
+
 body {
     background-color: #121212;
     color: white;
@@ -80,7 +81,6 @@ hr {
 
 #nav-item-engineering {
     font-family: 'Space Mono', monospace;
-    color: rgb(193, 251, 104);
     position: relative;
 }
 
@@ -88,7 +88,6 @@ hr {
     font-family: Cinzel, cursive;
     font-weight: 900;
     position: relative;
-    color: pink;
 }
 
 /* HOME SECTION  */
@@ -121,4 +120,13 @@ hr {
 .social-links a {
     margin: 0 5px;
     font-size: 20px;
+}
+
+/* Upcoming Pages */
+
+.upcoming-page .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 65vh;
 }
